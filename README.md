@@ -28,6 +28,10 @@ Welcome to my repository where I share my solutions for the LeetCode 75 Intervie
 
 - Solutions are written in both **Go** and **Java** to provide diverse approaches and enhance understanding of the problems.
 
+### Resources
+
+- For the complete list of questions and more information, visit the [LeetCode 75 Study Plan](https://leetcode.com/studyplan/leetcode-75/) on the LeetCode website.
+
 ### Contributions
 
 Feel free to contribute by:
