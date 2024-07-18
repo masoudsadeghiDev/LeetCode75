@@ -1,13 +1,4 @@
-package main
-
-import "fmt"
-
-func main() {
-	candies := []int{2, 8, 7}
-	extraCandies := 1
-
-	fmt.Println(kidsWithCandies(candies, extraCandies))
-}
+package array_string
 
 func kidsWithCandies(candies []int, extraCandies int) []bool {
 	maxCandy := candies[0]

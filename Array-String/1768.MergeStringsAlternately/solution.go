@@ -1,15 +1,9 @@
-package main
+package array_string
 
 import (
 	"fmt"
 	"strings"
 )
-
-func main() {
-
-	fmt.Println(mergeAlternately("abcd", "pq"))
-
-}
 
 func mergeAlternately(word1 string, word2 string) string {
 

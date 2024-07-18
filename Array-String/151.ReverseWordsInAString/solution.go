@@ -1,29 +1,25 @@
-package main
+package array_string
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 )
 
-func main() {
-	fmt.Println(reverseWords("  hello world  "))
-}
 
 func reverseWords(s string) string {
-	normalizedStr:= normalizeString(s)
-	words:= strings.Split(normalizedStr," ")
-	size:=len(words)
-	temp:=""
+	normalizedStr := NormalizeString(s)
+	words := strings.Split(normalizedStr, " ")
+	size := len(words)
+	temp := ""
 	for i := 0; i < size/2; i++ {
 		temp = words[i]
-		words[i] = words[size - i - 1]
-		words[size - i - 1] = temp
+		words[i] = words[size-i-1]
+		words[size-i-1] = temp
 	}
-	return strings.Join(words," ")
+	return strings.Join(words, " ")
 }
 
-func normalizeString(s string) string {
+func NormalizeString(s string) string {
 	trimmedStr := strings.TrimSpace(s)
 	re := regexp.MustCompile(`\s+`)
 	return re.ReplaceAllString(trimmedStr, " ")

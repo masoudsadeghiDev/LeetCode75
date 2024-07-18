@@ -1,16 +1,8 @@
-package main
+package array_string
 
 import (
-	"fmt"
 	"strings"
 )
-
-func main() {
-	str1 := "abc"
-	str2 := "pqr"
-	output := gcdOfStrings(str1, str2)
-	fmt.Printf("Input %v, %v and output is %v", str1, str2, output)
-}
 
 func gcdOfStrings(str1 string, str2 string) string {
 
